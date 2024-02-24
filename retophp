@@ -1,0 +1,15 @@
+Resuelve el siguiente reto:
+Cuantos caminos hay para llegar a un mismo punto?
+
+Imagina que hay varios puntos de comercio en una ciudad, estos estan conectados por via terrestre (horizontal) o via maritima (diagonal).
+
+       TIENDA2 --- TIENDA4 --- TIENDA6 --- TIENDA 8
+        / \	    / \        / \          /  \
+       /   \       /   \      /   \        /    \
+TIENDA1 --- TIENDA3 --- TIENDA5 --- TIENDA7 --- TIENDA9
+
+
+Siempre iniciaremos desde la izquierda, el reto consiste en definir todas las posibilidades de camino que podemos tomar a partir de una tienda X. siempre de izquierda a derecha nunca en retroceso
+
+
+
