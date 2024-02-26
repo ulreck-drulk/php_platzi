@@ -11,7 +11,7 @@ function clear (){
 $possible_words = ["Platano","Cafe","Rompecabezas","Dragon","Ventana","Guitarra","Conejo","Tomate","Portatil","Selva","Cohete","Billetera","Futbol","Burbuja","Castillo","Martillo","Almohada","Circo","Cactus","Bosque",];
 
 define("MAX_ATTEMPTS",5);
-echo "Juego del Ahorcado!! \n \n";
+echo "Juego del Ahorcado!!! \n \n";
 //Inicializando Juego:
 
 $choosen_words = $possible_words[rand(0,count($possible_words)-1)];
@@ -31,7 +31,7 @@ do {
 
     if (str_contains($choosen_words, $player_letter)){
         //Verificando las ocurrencias de las letras
-        $offset =0;
+        $offset = 0;
         while (
             ($letter_position = strpos($choosen_words, $player_letter, $offset))
             !== false

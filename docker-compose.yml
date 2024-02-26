@@ -1,8 +1,11 @@
 version: '3'
 services:
-  my_php_container:
-    build:
-      context: .
-      dockerfile: Dockerfile
+  web_ahorcado:
+    container_name: cn_ahorcado
+    image: php:8.1-apache
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
     volumes:
-      - ./ahorcado.php:/app/ahorcado.php
+      #- ./ahorcado.php:/app/ahorcado.php
+      - ./ahorcado.php:/var/www/html/ahorcado.php
